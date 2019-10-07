@@ -1,0 +1,30 @@
+{
+  "eltName": "marcel-plugin-gdrive-news-feed",
+  "name": "News Feed (GD)",
+  "frontend": {
+    "props": [
+      {
+        "name": "sheetId",
+        "type": "string",
+        "description": "The google spreadsheet containing the news feed"
+      },
+      {
+        "name": "apikey",
+        "type": "string",
+        "description": "The Google Drive API key having access right on the given folder"
+      },
+      {
+        "name": "rollInterval",
+        "type": "number",
+        "description": "The interval in seconds between each roll of news",
+        "value": "15"
+      },
+      {
+        "name": "fetchInterval",
+        "type": "number",
+        "description": "The interval in seconds between each data refresh",
+        "value": "60"
+      }
+    ]
+  }
+}
